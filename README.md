@@ -27,7 +27,7 @@ This repository documents my end-to-end object detection pipeline built during m
 
 
 
-![Pipeline](images/pipeline_banner.png)
+![Pipeline](banner.png)
 
 ---
 
