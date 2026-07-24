@@ -1,4 +1,4 @@
-# 🚀 Advanced Object Detection Pipeline
+# 🚀 Advanced Object Detection
 
 Advanced object detection workflows developed during my Machine Learning Internship, focusing on **small object detection from drone imagery** using modern Computer Vision and Deep Learning techniques.
 
