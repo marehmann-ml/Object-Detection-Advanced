@@ -1,0 +1,40 @@
+# ====================================================================
+# CONFIGURATION: THE ULTIMATE 150-EPOCH CHAMPION RUN (0.75+ TARGET)
+# ====================================================================
+
+#  Core Training Controls
+epochs: 100                      # Extended run to let unfreezed layers converge
+batch: 2                         # Stable for your GPU footprint
+imgsz: 768                       # High-resolution crops
+patience: 100                    # Prevents early stopping from cutting the run short
+
+#  Optimization & Learning Rates
+optimizer: 'MuSGD'                 # Stable driver for drone fine-tuning
+lr0: 0.001                       # Gives power to move metrics
+lrf: 0.01                        # Smooth learning rate decay schedule
+momentum: 0.937                  # Default SGD momentum
+weight_decay: 0.0005             # L2 regularization to prevent overfitting
+amp: True
+workers: 2
+
+#  Drone Invariance & Spatial Adjustments
+freeze: 2                        # Unfreezes more layers for deeper adaptation
+multi_scale: True                # Robustness against drone altitude variance
+mosaic: 0.0                      # Kept OFF to keep small targets intact
+
+#  Augmentation Parameters (Gentle Only)
+fliplr: 0.5                      # Horizontal flip active
+flipud: 0.0                      # Turned OFF (keeps perspective correct)
+degrees: 5.0                     # Low rotation to keep bounding boxes tight
+scale: 0.5                       # Tight scale variance
+hsv_v: 0.2                       # Shadow/lighting variance
+dropout: 0.1                     # Prevents overfitting on unfrozen layers
+
+#  Loss Functions & Bounding Box Penalties
+cls: 2.0                         # Balanced class penalty (does not hurt Motors)
+box: 7.5                         # Smooth bounding box regression
+copy_paste: 0.3                  # Balanced factor to protect Motor features
+copy_paste_mode: 'flip'          # Flips pasted objects for diversity
+
+#  Validation Tracking
+val: True                        # Track validation scores every epoch

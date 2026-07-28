@@ -1,0 +1,13 @@
+# ===================================================================================================
+# Dataset Routing Configuration (Target Augmented Slices Split)
+# ===================================================================================================
+
+path: "D:/VSCode/Fine Tune Model/data/augmented_cropped_split_256_overlap_50"
+train: "train/images"
+val: "valid/images"
+
+# 🎯 The 3 Exact Project Target Classes
+names:
+  0: human
+  1: car
+  2: motor
