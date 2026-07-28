@@ -51,12 +51,9 @@ Performance Evaluation
 ```text
 Object-Detection-Advanced/
 
+├── data/
 ├── docs/
-├── src/
-├── annotations/
-├── augmentation/
 ├── helper_scripts/
-├── office_road_detection/
 ├── sahi/
 ├── runs/
 ├── weights/
