@@ -26,7 +26,7 @@ Dataset Preparation & Cleaning
 Annotation & Verification
         │
         ▼
-Image Slicing (512×512 + Overlap)
+Image Slicing (512×512 + Overlap etc..)
         │
         ▼
 Data Augmentation
