@@ -65,6 +65,7 @@ Object-Detection-Advanced/
 
 ---
 
+
 # ✨ Project Highlights
 
 - Multi-Class Object Detection
