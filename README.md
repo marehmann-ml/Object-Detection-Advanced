@@ -8,6 +8,7 @@ Advanced object detection workflows developed during my Machine Learning Interns
 
 # 🛰️ Project Overview
 
+
 This repository documents my complete object detection journey throughout my internship. It captures the entire development pipeline—from preparing datasets and annotating images to training, fine-tuning, SAHI inference, and evaluating real-world performance on drone imagery.
 
 The primary objective is to improve **small object detection** for aerial scenes using both the **VisDrone benchmark dataset** and a **custom office-road dataset** collected during the internship.
