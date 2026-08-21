@@ -15,7 +15,6 @@ The primary objective is to improve **small object detection** for aerial scenes
 
 ---
 
-
 # 📌 Project Workflow
 
 ```text
